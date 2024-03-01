@@ -1,0 +1,117 @@
+<%-- 
+    Document   : index
+    Created on : Oct 14, 2023, 11:47:46 PM
+    Author     : nguye
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login Page</title>
+        <!-- Include Bootstrap CSS library -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/logins/login-12/assets/css/login-12.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/logins/login-12/assets/css/login-12.css">
+        <!-- Login 12 - Bootstrap Brain Component -->
+        <section class="py-3 py-md-5 py-xl-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-5">
+                            <h2 class="display-5 fw-bold text-center">Sign in</h2>
+                            <p class="text-center m-0">Don't have an account? <a href="register.jsp">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="row gy-5 justify-content-center">
+                            <div class="col-12 col-lg-5">
+                                <form action="CustomerController" method="post">
+                                    <div class="row gy-3 overflow-hidden">
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control border-0 border-bottom rounded-0" name="email" id="email" placeholder="email" required>
+                                                <label for="email" class="form-label">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="password" class="form-control border-0 border-bottom rounded-0" name="password" id="password" value="" placeholder="Password" required>
+                                                <label for="password" class="form-label">Password</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="d-grid">
+                                                <button class="btn btn-lg btn-dark rounded-0 fs-6" type="submit" name="btnsubmit">Log in</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/logins/login-12/assets/css/login-12.css">
+        <!-- Login 12 - Bootstrap Brain Component -->
+        <section class="py-3 py-md-5 py-xl-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-5">
+                            <h2 class="display-5 fw-bold text-center">Sign in Admin</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="row gy-5 justify-content-center">
+                            <div class="col-12 col-lg-5">
+                                <form action="AddminController" method="post">
+                                    <div class="row gy-3 overflow-hidden">
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control border-0 border-bottom rounded-0" name="username" id="username" placeholder="username" required>
+                                                <label for="text" class="form-label">Username</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="password" class="form-control border-0 border-bottom rounded-0" name="password" id="password" value="" placeholder="Password" required>
+                                                <label for="password" class="form-label">Password</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="d-grid">
+                                                <button class="btn btn-lg btn-dark rounded-0 fs-6" type="submit" name="btnsubmit">Log in</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Include Bootstrap JS and Popper.js (if needed) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
